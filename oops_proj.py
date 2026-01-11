@@ -1,9 +1,33 @@
 class chatbook:
+    __user_id = 1 # for static variable/method
+
     def __init__(self):
+        #static variable/method
+        self.id = chatbook.__user_id
+        chatbook.__user_id +=1
+
+        #Encapsulation
+        self.__name = "Default User"
+
         self.username = ''
         self.password = ''
         self.loggedin = False
-        self.menu()
+        # self.menu()
+
+    # getter and setter
+    # def get_name(self):
+    #     return self.__name
+    
+    # def set_name(self,value):
+    #     self.__name = value
+
+    #getter and setter for static variable
+    def  get_id():
+        return chatbook.__user_id
+    
+    def set_id(val):
+        chatbook.__user_id = val
+
 
     def menu(self):
         user_input = input(""""Welcome to chatbook!! How would you like to proceed? " \
@@ -66,5 +90,5 @@ class chatbook:
             print("You need to signin first to post something...")
         print("\n")
         self.menu()        
-obj = chatbook()
+# obj = chatbook()
 
