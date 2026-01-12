@@ -1,0 +1,41 @@
+1.Class and Object (example)
+2.Class has data/attribute and func/methods
+  > Code walkthrough
+  > Attributes get called itself, methods are called manually
+3.Why python is called OOP? - everything in Python is an object (data structure, data type etc)
+4.Advantages of OOPs :
+  > you can create your own datatype
+  > code reusability
+  > debugging
+  > easy to colab 
+
+5.End to end Project (Chatbook class)
+  > function vs method
+  > magic method or dunder method (eg. __init__, __add__, etc)
+  > self      
+  > You can create attribute outside class as well
+
+  > encapsulation-
+  Encapsulation in Python is a fundamental principle of Object-Oriented Programming (OOP) that involves bundling data (attributes) and methods that operate on that data into a single unit, typically a class. 
+  It also involves restricting direct access to some of an object's components to protect the data from accidental modification.
+
+  Example:
+  class Person:
+    def __init__(self, name, age):
+       self.__age = age # Private attribute
+
+  p1 = Person("Emil", 25)
+  # print(p1.__age) # This will raise an AttributeError
+
+
+  > getter and setter - method to get hidden attribute and set hidden attribute
+  > static method
+
+  > Inheritance
+  > Inheritance code example
+  > Why inheritance is needed? (code reuseability, parent has no access to child class)
+  > what gets inherited? Constructor, Non private attributes, Non private methods
+  > constructor overloading & method overloading
+  > Super keyword(can be used only inside class, can not access variables/attributes, used only inside child class)
+
+  > Types of inheritance  1. Single Inheritance |  2. Multilevel |  3. Hierarchical |  4. Multiple <Diamond Problem> |  5. Hybrid
